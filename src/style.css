@@ -39,8 +39,8 @@
 }
 
 a {
-  @apply font-medium text-[#646cff];
+  @apply text-blue-950
 }
 a:hover {
-  @apply text-[#535bf2];
+  @apply font-black underline;
 }

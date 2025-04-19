@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <title>Isabelle Hautbois - Artiste Peintre</title>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
   </head>
 
   <body
-    class="bg-neutral-50 font-inter text-base font-normal text-[#213547] w-full h-full"
+    class="bg-neutral-50 font-inter text-base font-normal text-blue-950 max-w-screen-xl mx-auto h-full py-12 px-6 sm:px-12 sm:py-12"
   >
-  COUCOU
-    
+  <header class="flex justify-between items-center mb-16 uppercase">
+    <h1 class=" text-2xl font-black whitespace-pre-line">{{ title }}</h1>
+    <nav>
+      <ul class="flex gap-4 [&>li>a]:">
+        <li><a href="/">Galerie</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="flex flex-col items-center max-w-screen-xl mx-auto gap-16">
+      <div class="flex flex-col gap-4 text-center leading-relaxed sm:px-8">
+        <p>{{ quoteOne }}</p>
+        <p>{{ quoteTwo }}</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {{#each paintings}}
+        <div class="grid gap-10">
+          {{#each this}}
+          <button class="max-w-full h-auto relative group cursor-pointer overflow-hidden rounded-sm hover:scale-x-102 transition-all duration-700 ease-in-out">
+            <img src="{{ image }}" alt="{{ title }}" class="w-full h-full object-cover group-hover:scale-105  duration-500 ease-in-out">
+            <div class="absolute bottom-0 left-0 w-full h-full bg-black/30 flex flex-col justify-end items-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              <p class="text-white text-2xl font-bold">{{ title }}</p>
+              <p class="text-white text-xl">{{ medium }}</p>
+            </div>
+          </button>
+           {{/each}}
+        </div>
+        {{/each}}
+  </main>
   </body>
 </html>
