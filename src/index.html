@@ -29,15 +29,15 @@
         <p>{{ quoteTwo }}</p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {{#each paintings}}
-        <div class="grid gap-10">
+        <div class="grid gap-16">
           {{#each this}}
           <button class="max-w-full h-auto relative group cursor-pointer overflow-hidden rounded-sm hover:scale-x-102 transition-all duration-700 ease-in-out" onClick="showModal('{{ image }}', '{{ title }}')">
             <img src="{{ image }}" alt="{{ title }}" class="w-full h-full object-cover group-hover:scale-105  duration-500 ease-in-out">
             <div class="absolute bottom-0 left-0 w-full h-full bg-black/30 flex flex-col justify-end items-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              <p class="text-white text-2xl font-bold">{{ title }}</p>
-              <p class="text-white text-xl">{{ medium }}</p>
+              <p class="text-white text-md font-bold tracking-wider uppercase">{{ title }}</p>
+              <p class="text-white text tracking-wide">{{ medium }}</p>
             </div>
           </button>
            {{/each}}
