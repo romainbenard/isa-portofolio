@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
     <title>Isabelle Hautbois - Artiste Peintre</title>
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
@@ -12,13 +15,12 @@
   <body
     class="bg-neutral-50 font-inter text-base font-normal text-blue-950 max-w-screen-xl mx-auto h-full py-12 px-6 sm:px-12 sm:py-12"
   >
-  <header class="flex justify-between items-center mb-16 uppercase">
-    <h1 class=" text-2xl font-black whitespace-pre-line">{{ title }}</h1>
+  <header class="flex flex-col md:flex-row justify-between items-center mb-16 uppercase">
+    <h1 class=" text-2xl font-black whitespace-pre-line">Isabelle Hautbois</h1>
     <nav>
-      <ul class="flex gap-4 [&>li>a]:">
+      <ul class="flex gap-4">
         <li><a href="/">Galerie</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">Parcours</a></li>
       </ul>
     </nav>
   </header>
@@ -55,23 +57,6 @@
     </div>
   </div>
 
-  <script>
-    function showModal(image, title) {
-      const modal = document.getElementById('modal-container');
-      const modalImage = document.getElementById('modal-image');
-      modal.classList.remove('hidden');
-      modal.classList.add(['flex']);
-      modal.classList.add('opacity-100', 'transition-opacity', 'duration-500', 'ease-in-out');
-
-      modalImage.src = image;
-      modalImage.alt = title;
-    }
-
-    function closeModal() {
-      const modal = document.getElementById('modal-container');
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    }
-  </script>
+  <script src="/scripts/modal.js"></script>
   </body>
 </html>

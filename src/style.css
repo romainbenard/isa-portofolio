@@ -38,9 +38,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+    font-family: "Sen", sans-serif;
+}
+
 a {
   @apply text-blue-950
 }
 a:hover {
-  @apply font-black underline;
+  @apply font-bold underline;
 }
