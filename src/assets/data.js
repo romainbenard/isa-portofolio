@@ -131,9 +131,16 @@ const aboutData = {
       "Le travail est lent, il faut savoir s’arrêter et souvent même détruire pour mieux reprendre mais soudain un dernier geste et c’est l’évidence.",
     title: "Parcours",
     description:
-      "Originaire de Bordeaux. Vit et travaille à Brive.\nA l’issue d’une formation juridique abandonne définitivement le droit en s’inscrivant aux Beaux-Arts de Toulon puis intègre l’atelier du peintre breton Eugène Kerbiriou à Pont-Aven pendant plus de 10 ans, tout en obtenant une maîtrise d’histoire de l’art à la faculté de Rennes.\nInstallée à Brive depuis 2003, rejoint l’atelier de Catherine Chaux, puis celui de Pierre Devaux, avant de poursuivre seule sa démarche artistique.",
+      "À l’issue d’une formation juridique abandonne définitivement le droit en s’inscrivant aux Beaux-Arts de Toulon puis intègre l’atelier du peintre breton Eugène Kerbiriou à Pont-Aven pendant plus de 10 ans, tout en obtenant une maîtrise d’histoire de l’art à la faculté de Rennes.\nInstallée à Brive en 2003, rejoint l’atelier de Catherine Chaux, puis celui de Pierre Devaux, avant de poursuivre seule sa démarche artistique.  Vit et travaille désormais à Bordeaux",
     exhibitions: {
       collective: [
+        {
+          year: "2017",
+          event: [
+            { city: "Bordeaux", place: "Salon Art Di'Vin" },
+            { city: "Bordeaux", place: "Salon Atelier Aquitaine – Saint-Rémi" },
+          ],
+        },
         {
           year: "2017",
           event: [{ city: "Bordeaux", place: "Salon Art Di'Vin" }],
