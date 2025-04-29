@@ -135,6 +135,10 @@ const aboutData = {
     exhibitions: {
       collective: [
         {
+          year: "2021",
+          event: [{ city: "Boulogne-Billancourt", place: "Espace Landowski" }],
+        },
+        {
           year: "2017",
           event: [
             { city: "Bordeaux", place: "Salon Art Di'Vin" },
