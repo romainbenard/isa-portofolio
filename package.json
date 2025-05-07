@@ -31,6 +31,6 @@
     "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
-    "cssnano": "^7.0.6"
+    "cssnano": "^7.0.7"
   }
 }
