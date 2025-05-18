@@ -126,7 +126,7 @@ const homeData = {
 };
 
 const aboutData = {
-  "/about.html": {
+  "/about/index.html": {
     quote:
       "Le travail est lent, il faut savoir s’arrêter et souvent même détruire pour mieux reprendre mais soudain un dernier geste et c’est l’évidence.",
     title: "Parcours",
